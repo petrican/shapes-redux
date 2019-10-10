@@ -1,0 +1,21 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  background: #ffffff;
+  font-family: sans-serif;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.site-header {
+  background-color: #333333;
+  padding: 20px;
+  text-align: left;
+  color: #ffffff;
+  font-weight: bold;
+}
