@@ -156,6 +156,11 @@ body {
   border-radius: 50%;
 }
 
+.shape-rectangle {
+  height: 50px;
+  width: 100px;
+}
+
 .color-red {
   background-color: #F40101;
 }
