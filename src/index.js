@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Header from './components/Header';
+import BodyArea from './components/BodyArea';
 
 import "./styles.css";
 
@@ -8,7 +9,8 @@ function App() {
   return (
     <div className="container">
       <Header text='SHAPES' />
-      <h2>Start editing to see some magic happen!</h2>
+     
+      <BodyArea text='Something' /> 
     </div>
   );
 }

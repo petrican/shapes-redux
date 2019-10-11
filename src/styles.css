@@ -19,3 +19,110 @@ body {
   color: #ffffff;
   font-weight: bold;
 }
+
+.body-area {
+  padding: 15px;
+}
+
+.list-names-box {
+  width: 50%;
+  float: left;
+}
+.list-names {
+  padding: 0px;
+}
+.list-names > .name-active {
+  display: inline;
+  text-align: left;
+  margin-left: 10px;
+  font-style: italic;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.list-names > .name-inactive {
+  display: inline;
+  text-align: left;
+  margin-left: 10px;
+  font-style: italic;
+  font-weight: 600;
+  color: gray;
+  cursor: pointer;
+}
+
+.filter-title {
+  float: left;
+  clear: both;
+  font-size: 2em;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-top: 30px;
+  padding-left: 10px;
+  color: #333333;
+}
+
+.color-box {
+  width: 50%;
+  float: right;
+  text-align: right;
+  display: inline;
+}
+
+.square-gray {
+  height: 25px;
+  width: 25px;
+  background-color: #E1E1E1;
+  cursor: pointer;
+  float: right;
+  margin: 8px 8px 0 0;
+}
+.square-red {
+  height: 25px;
+  width: 25px;
+  background-color: #F40101;
+  cursor: pointer;
+  float: right;
+  margin: 8px 8px 0 0;
+}
+
+.square-green {
+  height: 25px;
+  width: 25px;
+  background-color: #18c82b;
+  cursor: pointer;
+  float: right;
+  margin: 8px 8px 0 0;
+}
+.square-blue {
+  height: 25px;
+  width: 25px;
+  background-color: #2B9Dff;
+  cursor: pointer;
+  float: right;
+  margin: 8px 8px 0 0;
+}
+
+.square-yellow {
+  height: 25px;
+  width: 25px;
+  background-color: #F2BF44;
+  cursor: pointer;
+  float: right;
+  margin: 8px 8px 0 0;
+}
+.square-mauve {
+  height: 25px;
+  width: 25px;
+  background-color: #890087; 
+  cursor: pointer;
+  float: right;
+  margin: 8px 8px 0 0;
+}
+
+.active {
+  border: 2px solid #000000;
+}
+
+.inactive {
+  border: 0px;
+}
