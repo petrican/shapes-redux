@@ -1,0 +1,10 @@
+{
+    "name": "PWA app",
+    "short_name": "Progressive",
+    "start_url": "/?home=true",
+    "icons": [],
+    "theme_color": "#000000",
+    "background_color": "#FFFFFF",
+    "display": "fullscreen",
+    "orientation": "portrait"
+  }

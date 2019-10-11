@@ -6,11 +6,11 @@ const ListingContainer = props => {
 
   return (
     <div className="listing-container">
-        <Shape shape="round" key="1" color="red" />
-        <Shape shape="rectangle" key="2" color="blue" />
-        <Shape shape="oval" key="3" color="green" />
-        <Shape shape="triangle" key="4" color="yellow" />
-        <Shape shape="square" key="5" color="mauve" />
+        <Shape shape="round" color="red" />
+        <Shape shape="rectangle" color="blue" />
+        <Shape shape="oval" color="green" />
+        <Shape shape="triangle" color="yellow" />
+        <Shape shape="square" color="mauve" />
     </div>
   );
 };

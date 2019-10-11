@@ -37,6 +37,7 @@ body {
   margin-left: 10px;
   font-style: italic;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .list-names > .name-inactive {
@@ -46,6 +47,7 @@ body {
   font-style: italic;
   font-weight: 600;
   color: gray;
+  cursor: pointer;
 }
 
 .filter-title {
@@ -113,10 +115,12 @@ body {
 
 .active {
   border: 2px solid #000000;
+  cursor: pointer;
 }
 
 .inactive {
   border: 0px;
+  cursor: pointer;
 }
 
 /* Listing container */

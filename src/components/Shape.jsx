@@ -23,6 +23,8 @@ const Shape = props => {
     case "mauve":
       hexColor = "#890087";
       break;
+    default: 
+      // do nothing  
   }
 
   switch (props.shape) {
