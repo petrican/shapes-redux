@@ -4,7 +4,7 @@ import ColorFilters from "./ColorFilters";
 
 const MainFilters = () => {
   const shapesArr = ["ROUND", "SQUARE", "TRIANGLE", "OVAL", "RECTANGLE"];
-  const colorArr = ["gray", "yellow", "blue", "green", "red", "mauve"];
+  const colorArr = ["gray", "yellow", "blue", "green", "red", "purple"];
   return (
     <div>
       <NamedFilters shapes={shapesArr} />

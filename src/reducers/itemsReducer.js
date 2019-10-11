@@ -3,7 +3,7 @@ import {
   } from '../actions/types';
   
   const initialState = {
-    items: {}
+    data: []
   };
   
   export default function (state = initialState, action) {

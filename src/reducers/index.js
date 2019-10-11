@@ -1,10 +1,8 @@
 import { combineReducers } from 'redux';
 import itemsReducer from './itemsReducer';
-// import shapeReducer from './shapeReducer';
-// import colorReducer from './colorReducer';
+import filterReducer from './filterReducer';
 
 export default combineReducers({
-    items: itemsReducer
-    // shape: shapeReducer,
-    // color: colorReducer
+    items: itemsReducer,
+    filter: filterReducer
 });

@@ -16,7 +16,7 @@ class BodyArea extends Component {
     return (
       <div className="body-area">
         <MainFilters />
-        <FilterTitle title="Filter title"></FilterTitle>
+        <FilterTitle title={this.props.filter.title} />
         <ListingContainer items={this.props.items.data} />
       </div>
     );
@@ -25,7 +25,7 @@ class BodyArea extends Component {
 
 const mapStateToProps = state => ({
   items: state.items,
-  shapeFilter: state.shapeFilter
+  filter: state.filter
 });
 
 export default connect(
