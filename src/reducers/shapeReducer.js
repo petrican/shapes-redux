@@ -1,18 +1,19 @@
 import {
-    GET_ITEMS,
+    GET_SHAPE_FILTER,
+    SET_SHAPE_FILTER
   } from '../actions/types';
   
   const initialState = {
-    items: {}
+    shapes: []
   };
   
   export default function (state = initialState, action) {
     switch (action.type) {
-      case GET_ITEMS:
+      case GET_SHAPE_FILTER:
         return {
           ...state,
-          data: action.payload
         };
+        
       default:
         return state;
     }

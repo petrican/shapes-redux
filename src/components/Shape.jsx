@@ -8,7 +8,7 @@ const Shape = props => {
     case "red":
       hexColor = "#F40101";
       break;
-    case "gray":
+    case "grey":
       hexColor = "#E1E1E1";
       break;
     case "green":
@@ -20,7 +20,7 @@ const Shape = props => {
     case "yellow":
       hexColor = "#F2BF44";
       break;
-    case "mauve":
+    case "purple":
       hexColor = "#890087";
       break;
     default: 
@@ -42,7 +42,7 @@ const Shape = props => {
           formedShape = (
             <div
               className={`shape-${props.shape}`}
-              style={{ backgroundColor: `${hexColor}`, marginTop: '37px', marginBottom: '38px' }}
+              style={{ backgroundColor: `${hexColor}`, marginTop: '37px', marginBottom: '38px', marginLeft: '10px', marginRight: '15px' }}
               key={props.key}
             ></div>
           );

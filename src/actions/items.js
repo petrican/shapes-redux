@@ -1,12 +1,13 @@
 import axios from 'axios';
 import {
-  GET_ITEMS
+  GET_ITEMS,
+  GET_ERRORS
 } from './types';
 import { baseUrl } from '../helpers/index';
 
 export const listItems = res => ({
   type: GET_ITEMS,
-  payload: res
+  payload: res.data
 });
 
 

@@ -2,15 +2,14 @@ import React from "react";
 import Shape from './Shape';
 
 const ListingContainer = props => {
-  // const items = props.colors.map((item, key) => <Shape active={true} key={key} color={item} />);
+  let items = [];
+  if (typeof props.items !== 'undefined') {
+    items = props.items.map((item, key) => <Shape key={key} shape={item.shape} color={item.color} />);
+  }
 
   return (
     <div className="listing-container">
-        <Shape shape="round" color="red" />
-        <Shape shape="rectangle" color="blue" />
-        <Shape shape="oval" color="green" />
-        <Shape shape="triangle" color="yellow" />
-        <Shape shape="square" color="mauve" />
+        {items}
     </div>
   );
 };
