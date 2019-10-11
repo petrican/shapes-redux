@@ -161,21 +161,10 @@ body {
   width: 100px;
 }
 
-.color-red {
-  background-color: #F40101;
-}
-.color-gray {
-  background-color: #E1E1E1;
-}
-.color-green {
-  background-color: #18c82b;
-}
-.color-blue {
-  background-color: #2B9Dff;
-}
-.color-yellow {
-  background-color: #F2BF44;
-}
-.color-mauve {
-  background-color: #890087; 
+.shape-triangle {
+	width: 0;
+	height: 0;
+	border-left: 62px solid transparent;
+	border-right: 62px solid transparent;
+	border-bottom: 50px solid #555;
 }
