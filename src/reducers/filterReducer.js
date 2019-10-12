@@ -13,9 +13,9 @@ const initialState = {
     OVAL: true,
     RECTANGLE: true
   },
-  colors: ["gray", "yellow", "blue", "green", "red", "purple"],
+  colors: ["grey", "yellow", "blue", "green", "red", "purple"],
   colorsState: {
-    gray: true,
+    grey: true,
     yellow: true,
     blue: true,
     green: true,

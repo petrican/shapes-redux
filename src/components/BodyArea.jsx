@@ -21,7 +21,11 @@ class BodyArea extends Component {
           colorsState={this.props.filter.colorsState}
         />
         <FilterTitle title={this.props.filter.title} />
-        <ListingContainer items={this.props.items.data} />
+        <ListingContainer
+          items={this.props.items.data}
+          shapesState={this.props.filter.shapesState}
+          colorsState={this.props.filter.colorsState}
+        />
       </div>
     );
   }
