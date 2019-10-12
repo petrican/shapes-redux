@@ -1,11 +1,36 @@
-import React from "react";
+import React, { Component } from "react";
+import store from "../store";
+import { connect } from "react-redux";
+import { setColorFilter } from "../actions/filter";
 
-const ColorFilterItem = props => {
-  let setClass = props.active === true ? "active" : "inactive";
-  setClass = `${setClass} square-${props.color}`;
-  return (
-    <div className={setClass} id={props.keySet} key={props.keySet}></div>
-  );
-};
+class ColorFilterItem extends Component {
+  handleClick = () => {
+    const colorsNow = Object.assign({}, this.props.colorsNow);
+    colorsNow[this.props.color] = !this.props.active;
+    store.dispatch(setColorFilter(colorsNow));
+  };
 
-export default ColorFilterItem;
+  render() {
+    let setClass = this.props.active === true ? "active" : "inactive";
+    setClass = `${setClass} square-${this.props.color}`;
+    return (
+      <div
+        className={setClass}
+        id={this.props.keySet}
+        key={this.props.keySet}
+        onClick={this.handleClick}
+      ></div>
+    );
+  }
+}
+
+const mapStateToProps = state => ({
+  colorsNow: state.filter.colorsState
+});
+
+export default connect(
+  mapStateToProps,
+  {
+    setColorFilter
+  }
+)(ColorFilterItem);

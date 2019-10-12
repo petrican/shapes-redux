@@ -119,7 +119,7 @@ body {
 }
 
 .inactive {
-  border: 0px;
+  border: 2px solid #ffffff;
   cursor: pointer;
 }
 

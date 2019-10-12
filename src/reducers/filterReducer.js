@@ -1,18 +1,22 @@
-import { GET_SHAPE_FILTER, SET_SHAPE_FILTER } from "../actions/types";
+import {
+  GET_SHAPE_FILTER,
+  SET_SHAPE_FILTER,
+  SET_COLOR_FILTER
+} from "../actions/types";
 
 const initialState = {
   shapes: ["ROUND", "SQUARE", "TRIANGLE", "OVAL", "RECTANGLE"],
   shapesState: {
-    ROUND: false,
-    SQUARE: false,
+    ROUND: true,
+    SQUARE: true,
     TRIANGLE: true,
     OVAL: true,
     RECTANGLE: true
   },
   colors: ["gray", "yellow", "blue", "green", "red", "purple"],
   colorsState: {
-    gray: false,
-    yellow: false,
+    gray: true,
+    yellow: true,
     blue: true,
     green: true,
     red: true,
@@ -31,6 +35,11 @@ export default function(state = initialState, action) {
       return {
         ...state,
         shapesState: action.payload
+      };
+    case SET_COLOR_FILTER:
+      return {
+        ...state,
+        colorsState: action.payload
       };
     default:
       return state;
