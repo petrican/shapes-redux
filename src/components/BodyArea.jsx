@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import MainFilters from "./MainFilters";
 import FilterTitle from "./FilterTitle";
 import ListingContainer from "./ListingContainer";
-import { connect } from 'react-redux';
-import store from '../store';
-import { getItems} from '../actions/items';
+import { connect } from "react-redux";
+import store from "../store";
+import { getItems } from "../actions/items";
 
 class BodyArea extends Component {
   componentDidMount() {
@@ -12,10 +12,14 @@ class BodyArea extends Component {
   }
 
   render() {
-    console.log(this.props);
     return (
       <div className="body-area">
-        <MainFilters />
+        <MainFilters
+          shapes={this.props.filter.shapes}
+          colors={this.props.filter.colors}
+          shapesState={this.props.filter.shapesState}
+          colorsState={this.props.filter.colorsState}
+        />
         <FilterTitle title={this.props.filter.title} />
         <ListingContainer items={this.props.items.data} />
       </div>

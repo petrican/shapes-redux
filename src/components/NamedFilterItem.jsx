@@ -1,13 +1,37 @@
-import React from "react";
+import React, { Component } from "react";
+import store from "../store";
+import { connect } from "react-redux";
+import { setShapeFilter } from "../actions/filter";
 
-const NameFilterItem = props => {
-  const activeFlag = props.active === true ? "name-active" : "name-inactive";
+class NameFilterItem extends Component {
+  handleClick = () => {
+    const shapesNow = Object.assign({}, this.props.shapesNow);
+    shapesNow[this.props.item] = !this.props.active;
+    store.dispatch(setShapeFilter(shapesNow));
+  };
 
-  return (
-    <li className={activeFlag} key={props.setKey}>
-      {props.item}
-    </li>
-  );
-};
+  render() {
+    const activeFlag =
+      this.props.active === true ? "name-active" : "name-inactive";
+    return (
+      <li
+        className={activeFlag}
+        key={this.props.setKey}
+        onClick={this.handleClick}
+      >
+        {this.props.item}
+      </li>
+    );
+  }
+}
 
-export default NameFilterItem;
+const mapStateToProps = state => ({
+  shapesNow: state.filter.shapesState
+});
+
+export default connect(
+  mapStateToProps,
+  {
+    setShapeFilter
+  }
+)(NameFilterItem);

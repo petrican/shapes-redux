@@ -32,7 +32,6 @@ const Shape = props => {
       formedShape = (
         <div
           className={`shape-triangle`}
-          key={props.key}
           style={{ borderBottom: `125px solid ${hexColor}` }}
         ></div>
       );
@@ -43,7 +42,6 @@ const Shape = props => {
             <div
               className={`shape-${props.shape}`}
               style={{ backgroundColor: `${hexColor}`, marginTop: '37px', marginBottom: '38px', marginLeft: '10px', marginRight: '15px' }}
-              key={props.key}
             ></div>
           );
           break;  
@@ -52,7 +50,6 @@ const Shape = props => {
         <div
           className={`shape-${props.shape}`}
           style={{ backgroundColor: `${hexColor}` }}
-          key={props.key}
         ></div>
       );
   }
