@@ -7,6 +7,16 @@ class ColorFilterItem extends Component {
   handleClick = () => {
     const colorsNow = Object.assign({}, this.props.colorsNow);
     colorsNow[this.props.color] = !this.props.active;
+
+    let doReset = true;
+    for (const key of Object.keys(colorsNow)) {
+      if (colorsNow[key] !== false) doReset = false;
+    }
+    if (doReset === true) {
+      for (const key of Object.keys(colorsNow)) {
+        colorsNow[key] = true;
+      }
+    }
     store.dispatch(setColorFilter(colorsNow));
   };
 

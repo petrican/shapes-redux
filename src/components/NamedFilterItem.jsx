@@ -7,6 +7,15 @@ class NameFilterItem extends Component {
   handleClick = () => {
     const shapesNow = Object.assign({}, this.props.shapesNow);
     shapesNow[this.props.item] = !this.props.active;
+    let doReset = true;
+    for (const key of Object.keys(shapesNow)) {
+      if (shapesNow[key] !== false) doReset = false;
+    }
+    if (doReset === true) {
+      for (const key of Object.keys(shapesNow)) {
+        shapesNow[key] = true;
+      }
+    }
     store.dispatch(setShapeFilter(shapesNow));
   };
 
