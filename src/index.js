@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="container">
       <Header text="SHAPES" />
-      <BodyArea text="Something" />
+      <BodyArea />
     </div>
   );
 }

@@ -3,7 +3,8 @@ import ColorFilterItem from "./ColorFilterItem";
 
 type Props = {
   shapesState: object, 
-  colorsState: object
+  colorsState: object,
+  colors: array
 };
 
 const ColorFilters = (props: Props) => {

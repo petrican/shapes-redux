@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 import store from "../store";
 import { getItems } from "../actions/items";
 
-class BodyArea extends Component {
+export class BodyArea extends Component {
   componentDidMount() {
     store.dispatch(getItems());
   }
