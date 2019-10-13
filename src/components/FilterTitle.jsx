@@ -5,6 +5,8 @@ const FilterTitle = props => {
 
   const supLimitShapes = Object.keys(props.shapesState).length;
   const supLimitColors = Object.keys(props.colorsState).length;
+  let singleColor = null;
+  let singleShape = null;
 
   const trueColors = Object.values(props.colorsState).reduce(
     (accumulator, currentValue) => accumulator + currentValue
@@ -36,7 +38,7 @@ const FilterTitle = props => {
 
   // d. When all the shapes and a single color is selected: “All red items:”
   if (trueShapes === supLimitShapes && trueColors === 1) {
-    let singleColor = Object.keys(props.colorsState).filter(
+    singleColor = Object.keys(props.colorsState).filter(
       key => props.colorsState[key] === true
     );
     theTitle = `All ${singleColor} items`;
@@ -44,23 +46,23 @@ const FilterTitle = props => {
 
   // e. When all the colors and single shape is selected: “All round items:”
   if (trueColors === supLimitColors && trueShapes === 1) {
-    let singleShape = Object.keys(props.shapesState).filter(
+    singleShape = Object.keys(props.shapesState).filter(
       key => props.shapesState[key] === true
     );
     theTitle = `All ${singleShape} items`;
   }
 
   // f. When multiple the shapes and a single color is selected: “Multiple red items:”
-  if ((trueShapes < supLimitShapes && trueShapes > 1) && trueColors === 1) {
-    let singleColor = Object.keys(props.colorsState).filter(
+  if (trueShapes < supLimitShapes && trueShapes > 1 && trueColors === 1) {
+    singleColor = Object.keys(props.colorsState).filter(
       key => props.colorsState[key] === true
     );
     theTitle = `Multiple ${singleColor} items`;
   }
 
   // g. When multiple the colors and single shape is selected: “Multiple round items:”
-  if ((trueColors < supLimitColors && trueColors > 1) && trueShapes === 1) {
-    let singleShape = Object.keys(props.shapesState).filter(
+  if (trueColors < supLimitColors && trueColors > 1 && trueShapes === 1) {
+    singleShape = Object.keys(props.shapesState).filter(
       key => props.shapesState[key] === true
     );
     theTitle = `Multiple ${singleShape} items`;
@@ -68,14 +70,15 @@ const FilterTitle = props => {
 
   // h: When a single color and single shape is selected: “Round red items:”
   if (trueColors === 1 && trueShapes === 1) {
-    let singleShape = Object.keys(props.shapesState).filter(
+    singleShape = Object.keys(props.shapesState).filter(
       key => props.shapesState[key] === true
     );
-    let singleColor = Object.keys(props.colorsState).filter(
-        key => props.colorsState[key] === true
-      );
+    singleColor = Object.keys(props.colorsState).filter(
+      key => props.colorsState[key] === true
+    );
     theTitle = `${singleShape} ${singleColor} items`;
   }
+
   return <div className="filter-title">{theTitle}:</div>;
 };
 
