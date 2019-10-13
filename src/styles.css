@@ -50,35 +50,108 @@ body {
   cursor: pointer;
 }
 
-.filter-title {
-  float: left;
-  clear: both;
-  font-size: 2em;
-  font-style: italic;
-  text-transform: uppercase;
-  margin-top: 30px;
-  padding-left: 10px;
-  color: #333333;
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  /* Styles */
+  .color-box {
+    width: 100%;
+    float: right;
+    text-align: right;
+    display: inline;
+    clear: both;
+  }
+  .filter-title {
+    float: left;
+    clear: both;
+    font-size: 1.5em;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-top: 30px;
+    padding-left: 10px;
+    color: #333333;
+  }
+  .list-names-box {
+    width: 50%;
+    float: left;
+    font-size: 0.6em;
+  }
+  
 }
 
-.color-box {
-  width: 50%;
-  float: right;
-  text-align: right;
-  display: inline;
+/** Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Styles */
+  .color-box {
+    width: 50%;
+    float: right;
+    text-align: right;
+    display: inline;
+  }
+  .filter-title {
+    float: left;
+    clear: both;
+    font-size: 2em;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-top: 30px;
+    padding-left: 10px;
+    color: #333333;
+  }
 }
+
+/** Desktop and laptops */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+  .color-box {
+    width: 50%;
+    float: right;
+    text-align: right;
+    display: inline;
+  }
+  .filter-title {
+    float: left;
+    clear: both;
+    font-size: 2em;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-top: 30px;
+    padding-left: 10px;
+    color: #333333;
+  }
+}
+/** Larger screens */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+  .color-box {
+    width: 50%;
+    float: right;
+    text-align: right;
+    display: inline;
+  }
+  .filter-title {
+    float: left;
+    clear: both;
+    font-size: 2em;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-top: 30px;
+    padding-left: 10px;
+    color: #333333;
+  }
+}
+
 
 .square-grey {
   height: 25px;
   width: 25px;
-  background-color: #E1E1E1;
+  background-color: #e1e1e1;
   float: right;
   margin: 8px 8px 0 0;
 }
 .square-red {
   height: 25px;
   width: 25px;
-  background-color: #F40101;
+  background-color: #f40101;
   float: right;
   margin: 8px 8px 0 0;
 }
@@ -93,7 +166,7 @@ body {
 .square-blue {
   height: 25px;
   width: 25px;
-  background-color: #2B9Dff;
+  background-color: #2b9dff;
   float: right;
   margin: 8px 8px 0 0;
 }
@@ -101,14 +174,14 @@ body {
 .square-yellow {
   height: 25px;
   width: 25px;
-  background-color: #F2BF44;
+  background-color: #f2bf44;
   float: right;
   margin: 8px 8px 0 0;
 }
 .square-purple {
   height: 25px;
   width: 25px;
-  background-color: #890087; 
+  background-color: #890087;
   float: right;
   margin: 8px 8px 0 0;
 }
@@ -166,9 +239,9 @@ body {
 }
 
 .shape-triangle {
-	width: 0;
-	height: 0;
-	border-left: 62px solid transparent;
-	border-right: 62px solid transparent;
-	border-bottom: 50px solid #555;
+  width: 0;
+  height: 0;
+  border-left: 62px solid transparent;
+  border-right: 62px solid transparent;
+  border-bottom: 50px solid #555;
 }
