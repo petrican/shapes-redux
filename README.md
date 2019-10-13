@@ -9,24 +9,24 @@ Details:
 
 
 Filters: <br />
-a) All the filters are selected by default. <br />
-b) Multiple filters can be selected, selected filter changes their color or
+- All the filters are selected by default. <br />
+- Multiple filters can be selected, selected filter changes their color or
 have a border.<br />
-c) Deselecting the last filter, defaults to all selected.
+- Deselecting the last filter, defaults to all selected.
 Grid Title: <br />
-d) The title reflect changes based on the selected filters, please see
+- The title reflect changes based on the selected filters, please see
 examples below: <br />
-e) When all the colors and shapes are selected: “All items:” <br />
-f) When all the colors and a multiple shapes are selected: “Multiple
+a) When all the colors and shapes are selected: “All items:” <br />
+b) When all the colors and a multiple shapes are selected: “Multiple
 items:” <br />
-g) When all the shapes and multiple colors are selected: “Multiple items:” <br />
-h) When all the shapes and a single color is selected: “All red items:” <br />
-i) When all the colors and single shape is selected: “All round items:” <br />
-j) When multiple the shapes and a single color is selected: “Multiple red
+c) When all the shapes and multiple colors are selected: “Multiple items:” <br />
+d) When all the shapes and a single color is selected: “All red items:” <br />
+e) When all the colors and single shape is selected: “All round items:” <br />
+f) When multiple the shapes and a single color is selected: “Multiple red
 items:” <br />
-k) When multiple the colors and single shape is selected: “Multiple round
+g) When multiple the colors and single shape is selected: “Multiple round
 items:” <br />
-l) When a single color and single shape is selected: “Round red items:” <br />
+h) When a single color and single shape is selected: “Round red items:” <br />
  <br />
 ## Notes: <br />
 – The grid items ares painted with css only <br />
