@@ -14,8 +14,8 @@ Filters: <br />
 have a border.<br />
 - Deselecting the last filter, defaults to all selected.
 <br />
-Grid Title: <br />
-- The title reflect changes based on the selected filters, please see
+Grid Title <br />
+The title reflects the changes based on the selected filters, please see
 examples below: <br />
 a) When all the colors and shapes are selected: “All items:” <br />
 b) When all the colors and a multiple shapes are selected: “Multiple
