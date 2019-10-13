@@ -37,3 +37,6 @@ h) When a single color and single shape is selected: “Round red items:” <br 
 ### Setup <br />
 
  <br />
+ 
+ You need to have NodeJs installed first on your system. Please download this and follow the installation steps from [Node JS Download Page](https://nodejs.org/en/download/)
+ 
