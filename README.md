@@ -1,5 +1,5 @@
 ### shapes-redux
-## Small Shapes app using redux
+## Small Shapes app using Redux
 
 This React application is listing some colors and shapes and allows filtering them. <br />
 The data is read from `shapes.json` file found under the public folder. <br />
