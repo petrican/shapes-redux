@@ -1,9 +1,17 @@
 import React from "react";
 
-const Header = props => (
+type Props = {
+  text: string, 
+};
+
+const Header = (props: Props) => (
   <div className="site-header">
      {props.text}
   </div>
 );
+
+Header.defaultProps = {
+  text: "",
+};
 
 export default Header;

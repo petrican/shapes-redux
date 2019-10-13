@@ -1,7 +1,12 @@
 import React from "react";
 import ColorFilterItem from "./ColorFilterItem";
 
-const ColorFilters = props => {
+type Props = {
+  shapesState: object, 
+  colorsState: object
+};
+
+const ColorFilters = (props: Props) => {
   const items = props.colors.map((item, key) => (
     <ColorFilterItem active={props.colorsState[item]} key={key} color={item} />
   ));

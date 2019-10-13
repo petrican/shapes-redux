@@ -1,6 +1,12 @@
 import React from "react";
 
-const Shape = props => {
+type Props = {
+  id: string,
+  shape: string,
+  color: string
+};
+
+const Shape = (props: Props) => {
   let hexColor = "";
   let formedShape = "";
 
@@ -23,8 +29,8 @@ const Shape = props => {
     case "purple":
       hexColor = "#890087";
       break;
-    default: 
-      // do nothing  
+    default:
+    // do nothing
   }
 
   switch (props.shape) {
@@ -36,15 +42,21 @@ const Shape = props => {
         ></div>
       );
       break;
-    case "rectangle":   // fix position for both rectangle and oval
+    case "rectangle": // fix position for both rectangle and oval
     case "oval":
-          formedShape = (
-            <div
-              className={`shape-${props.shape}`}
-              style={{ backgroundColor: `${hexColor}`, marginTop: '37px', marginBottom: '38px', marginLeft: '10px', marginRight: '15px' }}
-            ></div>
-          );
-          break;  
+      formedShape = (
+        <div
+          className={`shape-${props.shape}`}
+          style={{
+            backgroundColor: `${hexColor}`,
+            marginTop: "37px",
+            marginBottom: "38px",
+            marginLeft: "10px",
+            marginRight: "15px"
+          }}
+        ></div>
+      );
+      break;
     default:
       formedShape = (
         <div

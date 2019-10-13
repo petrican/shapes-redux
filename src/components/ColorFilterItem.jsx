@@ -3,7 +3,14 @@ import store from "../store";
 import { connect } from "react-redux";
 import { setColorFilter } from "../actions/filter";
 
-class ColorFilterItem extends Component {
+type Props = {
+  colorsState: object, // foo is required.
+  colorsNow: object, // bar is required
+  color: string,
+  active: boolean
+};
+
+class ColorFilterItem extends Component<Props> {
   handleClick = () => {
     const colorsNow = Object.assign({}, this.props.colorsNow);
     colorsNow[this.props.color] = !this.props.active;

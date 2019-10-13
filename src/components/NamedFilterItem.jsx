@@ -3,7 +3,14 @@ import store from "../store";
 import { connect } from "react-redux";
 import { setShapeFilter } from "../actions/filter";
 
-class NameFilterItem extends Component {
+type Props = {
+  colorsState: object, 
+  colorsNow: object,
+  item: string,
+  active: boolean
+};
+
+class NameFilterItem extends Component<Props> {
   handleClick = () => {
     const shapesNow = Object.assign({}, this.props.shapesNow);
     shapesNow[this.props.item] = !this.props.active;

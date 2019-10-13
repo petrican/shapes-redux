@@ -1,7 +1,12 @@
 import React from "react";
 import Shape from "./Shape";
 
-const ListingContainer = props => {
+type Props = {
+  colorsState: object,
+  shapesState: object
+};
+
+const ListingContainer = (props: Props) => {
   let items = [];
   if (typeof props.items !== "undefined") {
     items = props.items.map((item, key) => {

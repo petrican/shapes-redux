@@ -1,6 +1,11 @@
 import React from "react";
 
-const FilterTitle = props => {
+type Props = {
+    shapesState: object, 
+    colorsState: object
+  };
+
+const FilterTitle = (props: Props) => {
   let theTitle = props.title;
 
   const supLimitShapes = Object.keys(props.shapesState).length;

@@ -1,7 +1,12 @@
 import React from "react";
 import NamedFilterItem from "./NamedFilterItem";
 
-const NamedFilters = props => {
+type Props = {
+  shapes: array, 
+  shapesState: object
+};
+
+const NamedFilters =  (props: Props) => {
   const items = props.shapes.map((item, key) => (
     <NamedFilterItem
       active={props.shapesState[item]}
