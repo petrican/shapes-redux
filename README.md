@@ -1,37 +1,38 @@
 ### shapes-redux
 ##Small Shapes app using redux
 
-This React application is listing some colors and shapes and allows filtering them. 
-The data is read from `shapes.json` file found under the public folder.
+This React application is listing some colors and shapes and allows filtering them. <br />
+The data is read from `shapes.json` file found under the public folder. <br />
 The items listed can be filtered by shape and color. The selected filters reflect to the grid title.:
-
+<br />
 Details:
 
 
-Filters:
-a) All the filters should be selected by default.
+Filters: <br />
+a) All the filters should be selected by default. <br />
 b) Multiple filters can be selected, selected filter should change their color or
-should have a border. See shapes.jpg for reference.
+should have a border. See shapes.jpg for reference. <br />
 c) Deselecting the last filter, should default to all selected.
-Grid Title:
+Grid Title: <br />
 d) The title should reflect change based on the selected filters, please see
-examples below:
-e) When all the colors and shapes are selected: “All items:”
+examples below: <br />
+e) When all the colors and shapes are selected: “All items:” <br />
 f) When all the colors and a multiple shapes are selected: “Multiple
-items:”
-g) When all the shapes and multiple colors are selected: “Multiple items:”
-h) When all the shapes and a single color is selected: “All red items:”
-i) When all the colors and single shape is selected: “All round items:”
+items:” <br />
+g) When all the shapes and multiple colors are selected: “Multiple items:” <br />
+h) When all the shapes and a single color is selected: “All red items:” <br />
+i) When all the colors and single shape is selected: “All round items:” <br />
 j) When multiple the shapes and a single color is selected: “Multiple red
-items:”
+items:” <br />
 k) When multiple the colors and single shape is selected: “Multiple round
-items:”
-l) When a single color and single shape is selected: “Round red items:”
+items:” <br />
+l) When a single color and single shape is selected: “Round red items:” <br />
+ <br />
+Notes: <br />
+– The grid items ares painted with css only <br />
+– The application is responsive <br />
+– The listing of the items and filtering is done using redux <br />
 
-Notes:
-– The grid items ares painted with css only
-– The application is responsive
-– The listing of the items and filtering is done using redux
+### Setup <br />
 
-### Setup
-
+ <br />
