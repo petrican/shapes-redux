@@ -57,7 +57,9 @@ You should be able to seee the app loaded on  Local:            http://localhost
 ## Enjoy!
 
 
-Note: If you want to build for prod you'll need to run 'npm build'
+Note: If you want to build for prod you'll need to run 'npm run build'
+
+
 
 
 
