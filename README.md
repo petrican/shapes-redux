@@ -1,10 +1,10 @@
-# shapes-redux
-Small Shapes app using redux
+### shapes-redux
+##Small Shapes app using redux
 
-This React application is listing some colors and shapes and allows filtering them. The data is read from
-`shapes.json` file found under the public folder. The items listed can be filtered by shape and color.
-The selected filters reflect to the grid title.:
-<br />
+This React application is listing some colors and shapes and allows filtering them. 
+The data is read from `shapes.json` file found under the public folder.
+The items listed can be filtered by shape and color. The selected filters reflect to the grid title.:
+
 Details:
 
 
