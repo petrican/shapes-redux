@@ -13,6 +13,7 @@ Filters: <br />
 - Multiple filters can be selected, selected filter changes their color or
 have a border.<br />
 - Deselecting the last filter, defaults to all selected.
+<br />
 Grid Title: <br />
 - The title reflect changes based on the selected filters, please see
 examples below: <br />
