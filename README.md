@@ -9,12 +9,12 @@ Details:
 
 
 Filters: <br />
-a) All the filters should be selected by default. <br />
-b) Multiple filters can be selected, selected filter should change their color or
-should have a border. See shapes.jpg for reference. <br />
-c) Deselecting the last filter, should default to all selected.
+a) All the filters are selected by default. <br />
+b) Multiple filters can be selected, selected filter changes their color or
+have a border.<br />
+c) Deselecting the last filter, defaults to all selected.
 Grid Title: <br />
-d) The title should reflect change based on the selected filters, please see
+d) The title reflect changes based on the selected filters, please see
 examples below: <br />
 e) When all the colors and shapes are selected: “All items:” <br />
 f) When all the colors and a multiple shapes are selected: “Multiple
