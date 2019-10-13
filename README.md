@@ -1,5 +1,5 @@
 ### shapes-redux
-##Small Shapes app using redux
+## Small Shapes app using redux
 
 This React application is listing some colors and shapes and allows filtering them. <br />
 The data is read from `shapes.json` file found under the public folder. <br />
@@ -28,7 +28,7 @@ k) When multiple the colors and single shape is selected: “Multiple round
 items:” <br />
 l) When a single color and single shape is selected: “Round red items:” <br />
  <br />
-Notes: <br />
+## Notes: <br />
 – The grid items ares painted with css only <br />
 – The application is responsive <br />
 – The listing of the items and filtering is done using redux <br />
