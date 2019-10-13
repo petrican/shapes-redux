@@ -39,4 +39,27 @@ h) When a single color and single shape is selected: “Round red items:” <br 
  <br />
  
  You need to have NodeJs installed first on your system. Please download this and follow the installation steps from [Node JS Download Page](https://nodejs.org/en/download/)
+ <br />
+ Once installed please clone this repo `https://github.com/petrican/shapes-redux.git`
+ <br />
+Change the directory to shapes-redux
+`cd shapes-redux`
+<br />
+Install the dependencies by running
+<br >
+`npm install`
+After dependencies are installed you can run the app in dev mode with
+<br />
+'npm start'
+
+You should be able to seee the app loaded on  Local:            http://localhost:3000/  so point your browser to that address if that does not open automatically.
+
+## Enjoy!
+
+
+Note: If you want to build for prod you'll need to run 'npm build'
+
+
+
+
  
