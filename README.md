@@ -48,9 +48,11 @@ Change the directory to shapes-redux
 Install the dependencies by running
 <br >
 `npm install`
+<br />
 After dependencies are installed you can run the app in dev mode with
 <br />
-'npm start'
+`npm start`
+<br />
 
 You should be able to seee the app loaded on  Local:            http://localhost:3000/  so point your browser to that address if that does not open automatically.
 
