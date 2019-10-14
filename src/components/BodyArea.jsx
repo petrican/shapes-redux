@@ -3,12 +3,11 @@ import MainFilters from "./MainFilters";
 import FilterTitle from "./FilterTitle";
 import ListingContainer from "./ListingContainer";
 import { connect } from "react-redux";
-import store from "../store";
 import { getItems } from "../actions/items";
 
 export class BodyArea extends Component {
   componentDidMount() {
-    store.dispatch(getItems());
+    this.props.getItems();
   }
 
   render() {
@@ -36,7 +35,14 @@ const mapStateToProps = state => ({
   filter: state.filter
 });
 
+const mapDispatchToProps = dispatch => {
+  return {
+    // dispatching actions returned by action creators
+    getItems: () => dispatch(getItems()),
+  }
+}
+
 export default connect(
   mapStateToProps,
-  {}
+  mapDispatchToProps
 )(BodyArea);
