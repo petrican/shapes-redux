@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import store from "../store";
 import { connect } from "react-redux";
 import { setColorFilter } from "../actions/filter";
 
@@ -24,7 +23,7 @@ class ColorFilterItem extends Component<Props> {
         colorsNow[key] = true;
       }
     }
-    store.dispatch(setColorFilter(colorsNow));
+    this.props.setColorFilter(colorsNow);
   };
 
   render() {
@@ -45,9 +44,14 @@ const mapStateToProps = state => ({
   colorsNow: state.filter.colorsState
 });
 
+const mapDispatchToProps = dispatch => {
+  return {
+    // dispatching actions returned by action creators
+    setColorFilter: (payload) => dispatch(setColorFilter(payload)),
+  }
+}
+
 export default connect(
   mapStateToProps,
-  {
-    setColorFilter
-  }
+  mapDispatchToProps
 )(ColorFilterItem);

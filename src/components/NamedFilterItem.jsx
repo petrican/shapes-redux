@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import store from "../store";
 import { connect } from "react-redux";
 import { setShapeFilter } from "../actions/filter";
 
@@ -23,7 +22,7 @@ class NameFilterItem extends Component<Props> {
         shapesNow[key] = true;
       }
     }
-    store.dispatch(setShapeFilter(shapesNow));
+    this.props.setShapeFilter(shapesNow);
   };
 
   render() {
@@ -45,9 +44,14 @@ const mapStateToProps = state => ({
   shapesNow: state.filter.shapesState
 });
 
+const mapDispatchToProps = dispatch => {
+  return {
+    // dispatching actions returned by action creators
+    setShapeFilter: (payload) => dispatch(setShapeFilter(payload)),
+  }
+}
+
 export default connect(
   mapStateToProps,
-  {
-    setShapeFilter
-  }
+  mapDispatchToProps
 )(NameFilterItem);
